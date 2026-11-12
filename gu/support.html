@@ -51,13 +51,13 @@ h1{hyphens:auto}h1,h2,figcaption{overflow-wrap:break-word}
 @media (max-width:360px){.friends{grid-template-columns:repeat(3,1fr);gap:16px 6px}.friend span{width:78px;height:78px}.friend img{max-width:62px;max-height:58px}.friend figcaption{font-size:14px}}
 @media (max-height:500px) and (orientation:landscape){.icon img{width:76px;height:76px}h1{font-size:34px;margin:8px 0 4px}.lead{font-size:18px;margin-bottom:10px}.badge img{height:48px}}
 .intro{font-size:clamp(18px,4.2vw,21px);max-width:40em;margin:0 auto 52px;text-align:center}
-.cards{display:grid;gap:52px 18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr))}
+.cards{display:grid;gap:52px 18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr))}.cards section:last-child:nth-child(odd){grid-column:1/-1}
 section{position:relative;background:var(--card);border-radius:30px;padding:26px 24px 16px;box-shadow:0 10px 30px var(--shade)}
 section h2{font-size:18px;letter-spacing:.04em;margin:0 0 12px;padding-inline-end:96px;min-height:40px}
 .pic{position:absolute;top:-34px;inset-inline-end:18px;display:grid;place-items:center;width:96px;height:96px;border-radius:50%;background:var(--b);box-shadow:0 8px 18px var(--shade)}
 .pic img{max-width:84px;max-height:66px}
 section ul{margin:0;padding-inline-start:1.15em}section li{margin:0 0 8px}section li::marker{color:#F28482}section p{margin:0 0 10px}
-.outro{text-align:center;margin:36px 0 0}footer{margin-top:28px;text-align:center;font-weight:700}footer a{margin:0 8px}
+.outro{text-align:center;margin:36px 0 0}.cta{text-align:center;margin:14px 0 0}.mail{display:inline-block;padding:14px 28px;border-radius:999px;background:#E4574F;color:#fff;font-size:19px;font-weight:800;text-decoration:none;box-shadow:0 8px 18px rgba(228,87,79,.35)}.advice{max-width:46em;margin:52px auto 0;padding:24px 26px 12px;border-radius:30px;background:var(--card);border:3px solid #A8D5A2;box-shadow:0 10px 30px var(--shade)}.advice h2{font-size:18px;letter-spacing:.04em;margin:0 0 12px}.advice ul{margin:0;padding-inline-start:1.15em}.advice li{margin:0 0 10px}.advice li::marker{color:#84A59D}.advice a{font-weight:700}footer{margin-top:28px;text-align:center;font-weight:700}footer a{margin:0 8px}
 .family{max-width:36em;margin:28px auto 0;padding:22px 24px;border-radius:30px;background:var(--card);text-align:center;font-size:18px;box-shadow:0 10px 30px var(--shade)}
 article{max-width:720px;margin:16px auto 0;background:var(--card);border-radius:30px;padding:6px 24px 22px;box-shadow:0 10px 30px var(--shade)}article h1{font-size:clamp(24px,7.5vw,30px);line-height:1.2}article h2{margin-top:32px;font-size:22px}
 @media (prefers-color-scheme:dark){:root{--ink:#F7EDE2;--card:#4A4358;--shade:rgba(0,0,0,.35)}
@@ -73,7 +73,7 @@ body{background:var(--dark) linear-gradient(180deg,#2E3552 0,var(--dark) 760px) 
 :is(.nightsky,.sun,.cloud,.grass,.road,.water,.scene img){transition:opacity .8s,filter .8s,background-color .8s,box-shadow .8s}.c2{animation-duration:12s}.c3{animation-duration:15s}
 .friend img{animation:bob 3s ease-in-out infinite}.friend:nth-child(3n+2) img{animation-delay:-1s}.friend:nth-child(3n) img{animation-delay:-2s}
 .friend:hover img,.friend:focus img,.friend:active img{animation:hop2 .7s ease-out}
-@supports (animation-timeline:view()){section,.friends,.family,.shots{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 70%}}}</style>
+@supports (animation-timeline:view()){section,.friends,.family,.shots,.advice{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 70%}}}</style>
 </head>
 <body>
 <main>
